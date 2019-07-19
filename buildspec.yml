@@ -14,13 +14,14 @@ phases:
     runtime-versions:
       nodejs: 10  
     commands:
-      
+      npm install
 
   pre_build:
     commands:
-    
+     
   build:
     commands:
+      npm start
       - echo Compilando el codigo de Node.js
   post_build:
     commands:
