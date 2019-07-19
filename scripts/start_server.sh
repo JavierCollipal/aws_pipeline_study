@@ -1,2 +1,3 @@
 #!/bin/bash
-forever start /var/nodeapp/app.js
+cd /var/nodeapp
+npm start
