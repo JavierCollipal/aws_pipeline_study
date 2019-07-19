@@ -1,9 +1,13 @@
     
 version: 0.0
 os: linux
+
 files:
+#donde se encuentran los archivos
   - source: /
     destination: /var/nodeapp/
+    #donde los dejaremos, por eso los scripts siempre hacen cd /var/nodeapp
+    #los hooks se autoexplican
 hooks:
   AfterInstall:
     - location: scripts/npm-install.sh
