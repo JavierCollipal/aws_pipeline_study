@@ -1,0 +1,34 @@
+# Version entregada por el ejemplo de CodeBuild
+version: 0.2
+
+#fases que ocupara CodeBuild en la compilación
+#en install definiremos que trabajaremos con node.js, en esta etapa podemos hacer un npm install de mas cosas
+#que necesitemos en nuestra app 
+#ej: paquetes de unit testing como jest,framework ui como element, etc..
+#en pre-built podemos instalar las dependencias llamando a npm install
+#en build ya estaremos compilando el codigo
+#post_build es la etapa posterior a buiild
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10  
+    commands:
+      
+
+  pre_build:
+    commands:
+    
+  build:
+    commands:
+      - echo Compilando el codigo de Node.js
+  post_build:
+    commands:
+      - echo Compilación completa 
+#artifact representa que archivos vamos a entregar con buildspec en el bucket de salida
+#un bucket es un contenedor de objetos
+#un archivo es guardado como un objeto en bucket
+#bucket puede disponer de varios archivos, en este caso solo entregaremos app.js
+artifacts:
+  files:
+    - app.js
