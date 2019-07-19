@@ -15,7 +15,7 @@ phases:
       nodejs: 10  
     commands:
       - echo En esta etapa podemos instalar todas las dependencias necesarias
-      npm install
+      - npm install
   pre_build:
     commands:     
   build:
