@@ -14,7 +14,7 @@ phases:
     runtime-versions:
       nodejs: 10  
     commands:
-      - aca instalaremos toda dependecia requerida por el proyecto
+      - echo En esta etapa podemos instalar todas las dependencias necesarias
       npm install
 
   pre_build:
@@ -22,9 +22,8 @@ phases:
      
   build:
     commands:
-
       - echo Compilando el codigo de Node.js
-      - echo Tambien es buena etapa para hacer test unitarios
+      - echo En esta etapa tambien podemos correr pruebas unitarias
   post_build:
     commands:
       - echo Compilación completa 
