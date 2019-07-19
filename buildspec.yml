@@ -28,7 +28,8 @@ phases:
 #artifact representa que archivos vamos a entregar con buildspec en el bucket de salida
 #un bucket es un contenedor de objetos
 #un archivo es guardado como un objeto en bucket
-#bucket puede disponer de varios archivos, en este caso solo entregaremos app.js
+#bucket puede disponer de varios archivos
+#en este caso **/* incluira todas las carpetas y archivos a nuestro artefacto
 artifacts:
   files:
-    - app.js
+    - '**/*'
