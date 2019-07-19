@@ -16,10 +16,8 @@ phases:
     commands:
       - echo En esta etapa podemos instalar todas las dependencias necesarias
       npm install
-
   pre_build:
-    commands:
-     
+    commands:     
   build:
     commands:
       - echo Compilando el codigo de Node.js
