@@ -1,5 +1,4 @@
 #!/bin/bash
-cd /var/nodeapp
-sudo chmod -R 777 /var/nodeapp
+cd /var/nodeapp/
 npm install
 npm install -g forever

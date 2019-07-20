@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /var/nodeapp
+cd /var/nodeapp/
 npm start
